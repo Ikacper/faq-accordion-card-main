@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+body {
+  background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%)) no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.card {
+  display: flex;
+  width: 375px;
+  min-height: 500px;
+  text-align: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 12px;
+  position: relative;
+  top: 40px;
+  margin: 5rem auto;
+}
+
+.illustration-woman {
+  position: relative;
+  top: -110px;
+  left: 30px;
+  background: url(./images/illustration-woman-online-mobile.svg) no-repeat;
+  width: 300px;
+  height: 200px;
+}
+
+.bg-pattern {
+  position: absolute;
+  top: 105px;
+  right: -30px;
+  background: url(./images/bg-pattern-mobile.svg) no-repeat;
+  width: 300px;
+  height: 120px;
+}
+
+.card__title {
+  position: relative;
+  bottom: 30px;
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+
+.card__list {
+  position: relative;
+  list-style: none;
+  bottom: 50px;
+}
+
+.list__item {
+  border-bottom: 1px solid hsl(240, 5%, 91%);
+  font-size: 0.92rem;
+  padding: 1rem;
+  width: 375px;
+}
+
+.list__item--heading {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.3rem 0 1rem 0;
+}
+
+.item__heading--active {
+  font-weight: 700;
+}
+
+.list__item--heading:hover {
+  color: hsl(14, 88%, 65%);
+  cursor: pointer;
+}
+
+.list__item--text {
+  text-align: left;
+  display: none;
+}
+
+.item__text--hidden {
+  display: block;
+}
+
+.list__item--button {
+  background: url(./images/icon-arrow-down.svg) no-repeat;
+  width: 10px;
+  height: 10px;
+  border: none;
+}
+
+.list__item--button:hover {
+  cursor: pointer;
+}
+.list__item--button:focus {
+  outline: none;
+}
+
+.list__item--rotatedButton {
+  transform: rotate(180deg);
+}
+
+.attribution {
+  position: relative;
+  bottom: 0;
+  padding: 1rem;
+}
+
+@media (min-width: 1440px) {
+  .card {
+    flex-direction: row;
+    width: 900px;
+    padding-bottom: 3rem;
+  }
+
+  .illustration-woman {
+    position: relative;
+    top: 50px;
+    left: -100px;
+    background: url(./images/illustration-woman-online-desktop.svg) no-repeat;
+    width: 500px;
+    height: 400px;
+  }
+
+  .box {
+    position: absolute;
+    top: 130px;
+    left: -40px;
+    background: url(./images/illustration-box-desktop.svg) no-repeat;
+    width: 200px;
+    height: 200px;
+  }
+
+  .bg-pattern {
+    position: absolute;
+    top: -360px;
+    left: -500px;
+    background: url(./images/bg-pattern-desktop.svg) no-repeat;
+    width: 966px;
+    height: 945px;
+  }
+  .card__list {
+    top: 40px;
+    left: -100px;
+  }
+
+  .card__title {
+    top: 0px;
+    text-align: left;
+    padding-left: 1rem;
+  }
+}
